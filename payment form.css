@@ -1,0 +1,110 @@
+/* Payment Form Container */
+.payment-form {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    margin: 80px auto 40px auto; /* ⬅️ More top margin */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    animation: fadeIn 1s ease;
+}
+
+/* Headings */
+.payment-form h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.payment-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.payment-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Inputs and Select */
+.payment-form input,
+.payment-form select {
+    width: 100%;
+    padding: 14px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Rows and Columns */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #474fa0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #fe5b3d;
+    transform: translateY(-2px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .payment-form {
+        padding: 30px 20px;
+        margin: 60px auto 20px auto; /* ⬅️ Also added more margin-top for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+    }
+}
